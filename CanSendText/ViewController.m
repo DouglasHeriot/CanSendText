@@ -10,55 +10,49 @@
 
 @implementation ViewController
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
-}
-
-#pragma mark - View lifecycle
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+	[[NSNotificationCenter defaultCenter] addObserverForName:MFMessageComposeViewControllerTextMessageAvailabilityDidChangeNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
+		NSLog(@"MFMessageComposeViewControllerTextMessageAvailabilityDidChangeNotification: %@", note);
+		[self handleCanSendText];
+	}];
+	
+	[[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidBecomeActiveNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
+		NSLog(@"UIApplicationDidBecomeActiveNotification: %@", note);
+		[self handleCanSendText];
+	}];
 }
 
-- (void)viewDidUnload
+- (void)handleCanSendText
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-	    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-	} else {
-	    return YES;
+	if([MFMessageComposeViewController canSendText])
+	{
+		self.view.backgroundColor = [UIColor greenColor];
+		
+		MFMessageComposeViewController *m = [[MFMessageComposeViewController alloc] init];
+		m.messageComposeDelegate = self;
+		m.body = @"It works!";
+		m.recipients = [NSArray array];
+		
+		[self presentModalViewController:m animated:YES];
 	}
+	else
+	{
+		self.view.backgroundColor = [UIColor redColor];
+	}
+}
+
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result
+{
+	NSLog(@"messageComposeViewController:didFinishWithResult:");
+	[self dismissModalViewControllerAnimated:YES];
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+	return YES;
 }
 
 @end

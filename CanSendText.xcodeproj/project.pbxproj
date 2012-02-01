@@ -16,6 +16,7 @@
 		2386074A14D8E04900C27F5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2386074914D8E04900C27F5B /* ViewController.m */; };
 		2386074D14D8E04900C27F5B /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2386074B14D8E04900C27F5B /* ViewController_iPhone.xib */; };
 		2386075014D8E04900C27F5B /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2386074E14D8E04900C27F5B /* ViewController_iPad.xib */; };
+		2386075714D8E08500C27F5B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2386075614D8E08500C27F5B /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +24,17 @@
 		2386073614D8E04900C27F5B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2386073814D8E04900C27F5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2386073A14D8E04900C27F5B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2386073E14D8E04900C27F5B /* CanSendText-Info.plist */ = {isa = PBXFileReference; path = "CanSendText-Info.plist"; sourceTree = "<group>"; };
+		2386073E14D8E04900C27F5B /* CanSendText-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CanSendText-Info.plist"; sourceTree = "<group>"; };
 		2386074014D8E04900C27F5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2386074214D8E04900C27F5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2386074414D8E04900C27F5B /* CanSendText-Prefix.pch */ = {isa = PBXFileReference; path = "CanSendText-Prefix.pch"; sourceTree = "<group>"; };
-		2386074514D8E04900C27F5B /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		2386074414D8E04900C27F5B /* CanSendText-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CanSendText-Prefix.pch"; sourceTree = "<group>"; };
+		2386074514D8E04900C27F5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2386074614D8E04900C27F5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2386074814D8E04900C27F5B /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		2386074814D8E04900C27F5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2386074914D8E04900C27F5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2386074C14D8E04900C27F5B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		2386074F14D8E04900C27F5B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		2386075614D8E08500C27F5B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2386075714D8E08500C27F5B /* MessageUI.framework in Frameworks */,
 				2386073714D8E04900C27F5B /* UIKit.framework in Frameworks */,
 				2386073914D8E04900C27F5B /* Foundation.framework in Frameworks */,
 				2386073B14D8E04900C27F5B /* CoreGraphics.framework in Frameworks */,
@@ -69,6 +72,7 @@
 		2386073514D8E04900C27F5B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2386075614D8E08500C27F5B /* MessageUI.framework */,
 				2386073614D8E04900C27F5B /* UIKit.framework */,
 				2386073814D8E04900C27F5B /* Foundation.framework */,
 				2386073A14D8E04900C27F5B /* CoreGraphics.framework */,
