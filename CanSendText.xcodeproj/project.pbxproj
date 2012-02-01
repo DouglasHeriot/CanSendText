@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2386073714D8E04900C27F5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2386073614D8E04900C27F5B /* UIKit.framework */; };
+		2386073914D8E04900C27F5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2386073814D8E04900C27F5B /* Foundation.framework */; };
+		2386073B14D8E04900C27F5B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2386073A14D8E04900C27F5B /* CoreGraphics.framework */; };
+		2386074114D8E04900C27F5B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2386073F14D8E04900C27F5B /* InfoPlist.strings */; };
+		2386074314D8E04900C27F5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2386074214D8E04900C27F5B /* main.m */; };
+		2386074714D8E04900C27F5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2386074614D8E04900C27F5B /* AppDelegate.m */; };
+		2386074A14D8E04900C27F5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2386074914D8E04900C27F5B /* ViewController.m */; };
+		2386074D14D8E04900C27F5B /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2386074B14D8E04900C27F5B /* ViewController_iPhone.xib */; };
+		2386075014D8E04900C27F5B /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2386074E14D8E04900C27F5B /* ViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2386073214D8E04900C27F5B /* CanSendText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanSendText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2386073614D8E04900C27F5B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2386073814D8E04900C27F5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2386073A14D8E04900C27F5B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2386073E14D8E04900C27F5B /* CanSendText-Info.plist */ = {isa = PBXFileReference; path = "CanSendText-Info.plist"; sourceTree = "<group>"; };
+		2386074014D8E04900C27F5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2386074214D8E04900C27F5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2386074414D8E04900C27F5B /* CanSendText-Prefix.pch */ = {isa = PBXFileReference; path = "CanSendText-Prefix.pch"; sourceTree = "<group>"; };
+		2386074514D8E04900C27F5B /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		2386074614D8E04900C27F5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2386074814D8E04900C27F5B /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		2386074914D8E04900C27F5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2386074C14D8E04900C27F5B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		2386074F14D8E04900C27F5B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2386072F14D8E04900C27F5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2386073714D8E04900C27F5B /* UIKit.framework in Frameworks */,
+				2386073914D8E04900C27F5B /* Foundation.framework in Frameworks */,
+				2386073B14D8E04900C27F5B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2386072714D8E04800C27F5B = {
+			isa = PBXGroup;
+			children = (
+				2386073C14D8E04900C27F5B /* CanSendText */,
+				2386073514D8E04900C27F5B /* Frameworks */,
+				2386073314D8E04900C27F5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2386073314D8E04900C27F5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2386073214D8E04900C27F5B /* CanSendText.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2386073514D8E04900C27F5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2386073614D8E04900C27F5B /* UIKit.framework */,
+				2386073814D8E04900C27F5B /* Foundation.framework */,
+				2386073A14D8E04900C27F5B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2386073C14D8E04900C27F5B /* CanSendText */ = {
+			isa = PBXGroup;
+			children = (
+				2386074514D8E04900C27F5B /* AppDelegate.h */,
+				2386074614D8E04900C27F5B /* AppDelegate.m */,
+				2386074814D8E04900C27F5B /* ViewController.h */,
+				2386074914D8E04900C27F5B /* ViewController.m */,
+				2386074B14D8E04900C27F5B /* ViewController_iPhone.xib */,
+				2386074E14D8E04900C27F5B /* ViewController_iPad.xib */,
+				2386073D14D8E04900C27F5B /* Supporting Files */,
+			);
+			path = CanSendText;
+			sourceTree = "<group>";
+		};
+		2386073D14D8E04900C27F5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2386073E14D8E04900C27F5B /* CanSendText-Info.plist */,
+				2386073F14D8E04900C27F5B /* InfoPlist.strings */,
+				2386074214D8E04900C27F5B /* main.m */,
+				2386074414D8E04900C27F5B /* CanSendText-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2386073114D8E04900C27F5B /* CanSendText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2386075314D8E04900C27F5B /* Build configuration list for PBXNativeTarget "CanSendText" */;
+			buildPhases = (
+				2386072E14D8E04900C27F5B /* Sources */,
+				2386072F14D8E04900C27F5B /* Frameworks */,
+				2386073014D8E04900C27F5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CanSendText;
+			productName = CanSendText;
+			productReference = 2386073214D8E04900C27F5B /* CanSendText.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2386072914D8E04800C27F5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 2386072C14D8E04800C27F5B /* Build configuration list for PBXProject "CanSendText" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2386072714D8E04800C27F5B;
+			productRefGroup = 2386073314D8E04900C27F5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2386073114D8E04900C27F5B /* CanSendText */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2386073014D8E04900C27F5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2386074114D8E04900C27F5B /* InfoPlist.strings in Resources */,
+				2386074D14D8E04900C27F5B /* ViewController_iPhone.xib in Resources */,
+				2386075014D8E04900C27F5B /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2386072E14D8E04900C27F5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2386074314D8E04900C27F5B /* main.m in Sources */,
+				2386074714D8E04900C27F5B /* AppDelegate.m in Sources */,
+				2386074A14D8E04900C27F5B /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2386073F14D8E04900C27F5B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2386074014D8E04900C27F5B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2386074B14D8E04900C27F5B /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2386074C14D8E04900C27F5B /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		2386074E14D8E04900C27F5B /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2386074F14D8E04900C27F5B /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2386075114D8E04900C27F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2386075214D8E04900C27F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2386075414D8E04900C27F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CanSendText/CanSendText-Prefix.pch";
+				INFOPLIST_FILE = "CanSendText/CanSendText-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2386075514D8E04900C27F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CanSendText/CanSendText-Prefix.pch";
+				INFOPLIST_FILE = "CanSendText/CanSendText-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2386072C14D8E04800C27F5B /* Build configuration list for PBXProject "CanSendText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2386075114D8E04900C27F5B /* Debug */,
+				2386075214D8E04900C27F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2386075314D8E04900C27F5B /* Build configuration list for PBXNativeTarget "CanSendText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2386075414D8E04900C27F5B /* Debug */,
+				2386075514D8E04900C27F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2386072914D8E04800C27F5B /* Project object */;
+}
